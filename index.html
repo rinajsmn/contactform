@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+ 
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+  
+  <div id="toast">
+    <div class="toast-header">
+      <img src="/assets/images/icon-success-check.svg">
+      <h2>Message sent!</h2>
+    </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form action="#">
+
+      <div class="usersInfo">
+      <div class="inputBox">
+        <label for="fname"><span class="label required">First Name</span></label>
+        <input type="text" name="fname" id="fname" >
+        <div class="error"></div>
+      </div>
+
+      <div class="inputBox">
+        <label for="lname"><span class="label required">Last Name</span></label>
+        <input type="text" name="lname" id="lname" >
+        <div class="error"></div>
+      </div>
+
+      <div class="emailBox">
+        <label for="email"><span class="label required" >Email Address</span></label>
+        <input type="email" name="email" id="email" > 
+        <div class="error"></div>
+      </div>
+      <div class="query">
+        <span class="label required" >Query Type</span>
+        <div id="query">
+        <div class="query-option">
+        <input type="radio" name="query" id="genEnq" checked>
+        <img src="assets/images/icon-radio-selected.svg">
+        <label for="genEnq" class="label">General Enquiry</label>
+        </div>
+
+        <div class="query-option">
+        <input type="radio" name="query" id="supReq" >
+        <img src="assets/images/icon-radio-selected.svg">
+        <label for="supReq" class="label">Support Request</label>
+        </div>
+        <div class="error"></div>
+      </div>
+     
+      <!--Please select a query type-->
+      </div>
+      <div class="message">
+        <span class="label required">Message</span>
+        <textarea name="message" id="message" rows="5" cols="61" ></textarea>
+        <div class="error"></div>
+      </div>
+      
+    
+      <div class="checkbox">
+        <input type="checkbox" id="consent" >
+        <label for="consent"><span class="required">I consent to being contacted by the team</span></label>
+        <img src="/assets/images/icon-checkbox-check.svg">
+        <div class="error"></div>
+    </div>
+    </div>
+      <div id="submit-container">
+        <button type='submit' id="submit" >Submit</button>
+      </div>
+
+    </form>
+  </div>
+  
+  <script src="script.js"></script>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+
+</body>
+</html>
